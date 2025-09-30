@@ -40,6 +40,11 @@ func main() {
 	programCommands.register("register", handlerRegister)
 	programCommands.register("reset", handlerReset)
 	programCommands.register("users", handlerUsers)
+	programCommands.register("agg", handlerAgg)
+	programCommands.register("addfeed", handlerAddFeed)
+	programCommands.register("feeds", handlerFeeds)
+	programCommands.register("follow", handlerFollow)
+	programCommands.register("following", handlerFollowing)
 
 	if len(os.Args) < 2 {
 		fmt.Println("no command given")
