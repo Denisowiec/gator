@@ -18,7 +18,7 @@ func handlerFollowing(s *state, cmd command, user database.User) error {
 		if err != nil {
 			return err
 		}
-		fmt.Printf("Feed name: %s\n", feed.Name)
+		fmt.Printf("Feed name: %s\nFeed url:%v\n\n", feed.Name, feed.Url)
 	}
 	return nil
 }
