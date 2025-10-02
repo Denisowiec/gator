@@ -47,6 +47,7 @@ func main() {
 	programCommands.register("following", middlewareLoggedIn(handlerFollowing))
 	programCommands.register("unfollow", middlewareLoggedIn(handlerUnfollow))
 	programCommands.register("browse", middlewareLoggedIn(handlerBrowse))
+	programCommands.register("help", handlerHelp)
 
 	if len(os.Args) < 2 {
 		fmt.Println("no command given")

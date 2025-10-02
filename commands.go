@@ -5,8 +5,9 @@ import (
 )
 
 type command struct {
-	name string
-	args []string
+	name     string
+	args     []string
+	helpText string
 }
 type commands struct {
 	cmdList map[string]func(*state, command) error
